@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'xs': {'min': '320px' , 'max' : '639px'},
+                    'tmd': {'min': '768px' , 'max' : '1023px'}
+                },
+                aspectRatio: {
+                    '3/2': '3 / 2',
+                }
+            }
+          }
+        }
+      </script>
+      
+
+    <title>Online Course E-Learning Website</title>
+    <style>
+        body{
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class=" bg-gray-100">
+    <div class="text-white mx-[20px] bg-orange-500 text-center rounded-[6px] xs:text-[12px] md:text-[13px] xl:text-[18px] xs:mt-[10px] md:mt-[15px] h-[41px] pt-[9px]">
+        <p class="xs:pt-[3px] font-normal">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+    </div>
+
+    <nav class="flex justify-between items-center w-[86%] md:w-[90%] lg:w-[90%]
+          mx-auto container mt-2 font-normal">
+          
+          <!-- width-92 che tyaj changes karavanu raheshe atale che ne thai jase space -->
+            <div>
+                <h1 class="text-[17px] xl:text-[21px]"><b>LOGO</b></h1>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-[15px] xs:bg-gray-300 xs:p-[10px] xs:rounded-[12px] xs:ml-auto md:gap-8 text-[14px] xl:text-[18px]">
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Courses_Page.html">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="About_Us_Page.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Pricing_Page.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Contact_Page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center xs:gap-[10px] md:gap-6 ">
+                <li class="list-none hover:text-red-500 text-[14px] xl:text-[18px] font-normal"><a href="Sign_Up_Page.html">Sign Up</a></li>
+                <button class="bg-orange-500 text-white xs:px-[15px] xs:py-[8px] md:px-5 md:py-2 rounded-md hover:bg-orange-600 text-[14px] xl:text-[18px] font-normal"><a href="Login_Page.html">Sign in</a></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    
+    </nav> 
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[80px] md:mt-[130px] xl:mt-[180px] gap-[60px]">
+        <div class="text-center">
+            <h1 class="whitespace-nowrap mx-auto text-[13.5px] md:text-[36px] xl:text-[48px] border rounded-[11px]  md:w-[650px] xl:w-[850px] px-[8px] md:px-[12px] xl:px-[14px] bg-white flex md:gap-[10px]"><i class="fa-solid fa-bolt rounded-[6px] xs:w-[41px] xs:h-[41px] md:w-[48px] md:h-[48px] xl:w-[62px] xl:h-[62px] text-[21px] xl:text-[29px] border bg-orange-100 p-[10px] xl:p-[15px] my-[10px]" style="color: #080808;"></i><b class="mt-[22.5px] md:mt-[7.5px] xl:mt-[4px] ml-[4px]"><span class="text-orange-500 font-semibold text-[13.5px] md:text-[36px] xl:text-[48px] ">Unlock</span> Your Creative Potential</b></h1>
+            <h1 class="text-[24px] md:text-[28px] xl:text-[38px] font-medium">with Online Design and Development Courses.</h1>
+            <p class="text-[14px] md:text-[16px] xl:text-[18px] font-normal">Learn from Industry Experts and Enhance Your Skills.</p>
+        </div>
+        <div class="flex justify-center xs:gap-[10px] md:gap-[12px] xs:w-[91%] mx-auto mt-[49px] xl:mt-[63px]">
+            <button class="bg-orange-500 text-white rounded-md px-[13px] py-[12px] xl:px-[24px] xl:py-[18px] xs:text-[13px] md:text-[14px] xl:text-[18px] font-semibold">Explore Courses</button>
+            <button class="bg-white rounded-md px-[13px] py-[12px] md:px-[24px] md:py-[18px] xs:text-[13px] md:text-[14px] xl:text-[18px] font-medium">View Pricing</button>
+        </div>
+
+        <div class="flex justify-between border bg-white rounded-[12px] h-[84px] md:h-[116px] xl:h-[154px] gap-[0px] xl:gap-[8px] p-[20px] md:p-[35px] xl:p-[30px] mt-[30px] md:mt-[85px] xl:mt-[120px]">
+            <img class="aspect-[3/2] object-contain" src="img/zapier-logo.png" alt="">
+            <img class="aspect-[3/2] object-contain" src="img/spotify-2.png" alt="">
+            <img class="aspect-[3/2] object-contain" src="img/Zoom-logo.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:hidden"  src="img/amazon-logo.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:hidden" src="img/adobe-2.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:hidden" src="img/notion-2.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:hidden" src="img/netflix-logo.png" alt="">
+        </div>
+    </section>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px]">
+        <div>
+            <img class="w-[100%] h-[247px] xl:h-[790px] md:h-[649px] rounded-[10px] xl:rounded-[12px] object-cover" src="img/home-img.png" alt="">
+        </div>
+        <div class="xs:flex-wrap md:flex justify-end mt-[20px] md:mt-[60px] xl:mt-[100px]">
+            <div class="md:mr-auto">
+                <h1 class="text-[28px] md:text-[38px] xl:text-[48px] font-semibold"><b>Benefits</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[96px] h-[49px] xl:w-[120px] xl:h-[63px] py-[14px] px-[20px] xl:py-[18px] xl:px-[24px] xs:text-[13.5px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto whitespace-nowrap font-medium">View All</button>
+        </div>
+        <div class="tmd:grid tmd:md:grid-cols-2 tmd:gap-[20px] mt-[30px] md:mt-[40px] xl:mt-[60px]">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-[19px]">
+                <div class="border rounded-[10px] xl:rounded-[12px] bg-white p-[30px] md:p-[40px] xl:p-[50px] xl:w-[419px] xl:h-[437px] tmd:h-[330px] lg:h-[390px]">
+                    <h1 class="text-end text-[40px] md:text-[60px] xl:text-[80px] font-bold"><b>01</b></h1>
+                    <h1 class="text-[16px] lg:text-[20px] xl:text-[24px] font-semibold"><b>Flexible Learning Schedule</b></h1>
+                    <p class="text-[14px] lg:text-[16px] xl:text-[18px] h-[42px] lg:h-[72px] xl:h-[54px] font-normal">Fit your coursework around your existing commitments and obligations.</p>
+                    <h1 class="text-end xs:pt-[35px] tmd:pt-[45px] lg:pt-[45px] xl:pt-[70px]"><i class="fa-solid fa-location-arrow border rounded-[6px] xl:rounded-[8px] p-[14px] xl:p-[20px]" style="color: #030303;"></i></h1>
+                </div>
+                <div class="border rounded-[10px] xl:rounded-[12px] bg-white p-[30px] md:p-[40px] xl:p-[50px] xl:w-[419px] xl:h-[437px] xs:mt-[13px] tmd:mt-[20px] tmd:h-[330px] lg:h-[390px]">
+                    <h1 class="text-end text-[40px] md:text-[60px] xl:text-[80px] font-bold"><b>02</b></h1>
+                    <h1 class="text-[16px] lg:text-[20px] xl:text-[24px] font-semibold"><b>Expert Instruction</b></h1>
+                    <p class="text-[14px] lg:text-[16px] xl:text-[18px] h-[42px] lg:h-[72px] xl:h-[54px] font-normal">Learn from industry experts who have hands-on experience in design and development.</p>
+                    <h1 class="text-end xs:pt-[35px] tmd:pt-[45px] lg:pt-[77px] xl:pt-[70px]"><i class="fa-solid fa-location-arrow border rounded-[6px] xl:rounded-[8px] p-[14px] xl:p-[20px]" style="color: #030303;"></i></h1>
+                </div>
+                <div class="border rounded-[10px] xl:rounded-[12px] bg-white p-[30px] md:p-[40px] xl:p-[50px] xl:w-[419px] xl:h-[437px] xs:mt-[13px] tmd:mt-[20px] tmd:h-[330px] lg:h-[390px]">
+                    <h1 class="text-end text-[40px] md:text-[60px] xl:text-[80px] font-bold"><b>03</b></h1>
+                    <h1 class="text-[16px] lg:text-[20px] xl:text-[24px] font-semibold"><b>Diverse Course Offerings</b></h1>
+                    <p class="text-[14px] lg:text-[16px] xl:text-[18px] h-[42px] lg:h-[72px] xl:h-[54px] font-normal">Explore a wide range of design and development courses covering various topics.</p>
+                    <h1 class="text-end xs:pt-[35px] tmd:pt-[45px] lg:pt-[45px] xl:pt-[70px]"><i class="fa-solid fa-location-arrow border rounded-[6px] xl:rounded-[8px] p-[14px] xl:p-[20px]" style="color: #030303;"></i></h1>
+                </div>
+    
+            </div>
+            <div class="lg:grid lg:grid-cols-3 lg:mt-[19px]  lg:gap-[19px]">
+                <div class="border rounded-[10px] xl:rounded-[12px] bg-white p-[30px] md:p-[40px] xl:p-[50px] xl:w-[419px] xl:h-[437px] xs:mt-[13px] tmd:h-[330px] lg:h-[390px]">
+                    <h1 class="text-end text-[40px] md:text-[60px] xl:text-[80px] font-bold"><b>04</b></h1>
+                    <h1 class="text-[16px] lg:text-[20px] xl:text-[24px] font-semibold"><b>Updated Curriculum</b></h1>
+                    <p class="text-[14px] lg:text-[16px] xl:text-[18px] h-[42px] lg:h-[72px] xl:h-[54px] font-normal">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                    <h1 class="text-end xs:pt-[35px] tmd:pt-[45px] lg:pt-[75px]"><i class="fa-solid fa-location-arrow border rounded-[6px] xl:rounded-[8px] p-[14px] xl:p-[20px]" style="color: #030303;"></i></h1>
+                </div>
+                <div class="border rounded-[10px] xl:rounded-[12px] bg-white p-[30px] md:p-[40px] xl:p-[50px] xl:w-[419px] xl:h-[437px] xs:mt-[13px] tmd:mt-[20px] tmd:h-[330px] lg:h-[390px]">
+                    <h1 class="text-end text-[40px] md:text-[60px] xl:text-[80px] font-bold"><b>05</b></h1>
+                    <h1 class="text-[16px] lg:text-[20px] xl:text-[24px] font-semibold"><b>Practical Projects & Assignments</b></h1>
+                    <p class="text-[14px] lg:text-[16px] xl:text-[18px] h-[42px] lg:h-[72px] xl:h-[54px] font-normal">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                    <h1 class="text-end xs:pt-[35px] tmd:pt-[45px] lg:pt-[45px] xl:pt-[40px]"><i class="fa-solid fa-location-arrow border rounded-[6px] xl:rounded-[8px] p-[14px] xl:p-[20px]" style="color: #030303;"></i></h1>
+                </div>
+                <div class="border rounded-[10px] xl:rounded-[12px] bg-white p-[30px] md:p-[40px] xl:p-[50px] xl:w-[419px] xl:h-[437px] xs:mt-[13px] tmd:mt-[20px] tmd:h-[330px] lg:h-[390px]">
+                    <h1 class="text-end text-[40px] md:text-[60px] xl:text-[80px] font-bold"><b>06</b></h1>
+                    <h1 class="text-[16px] lg:text-[20px] xl:text-[24px] font-semibold"><b>Interactive Learning Environment</b></h1>
+                    <p class="text-[14px] lg:text-[16px] xl:text-[18px] h-[42px] lg:h-[72px] xl:h-[54px] font-normal">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+                    <h1 class="text-end xs:pt-[35px] tmd:pt-[45px] lg:pt-[45px] xl:pt-[40px]"><i class="fa-solid fa-location-arrow border rounded-[6px] xl:rounded-[8px] p-[14px] xl:p-[20px]" style="color: #030303;"></i></h1>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px]">
+        <div class="xs:flex-wrap md:flex mt-[20px] md:mt-[60px] xl:mt-[100px]">
+            <div class="md:mr-auto">
+                <h1 class="text-[28px] md:text-[38px] xl:text-[48px] font-semibold"><b>Our Courses</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[96px] h-[49px] xl:w-[120px] xl:h-[63px] py-[14px] px-[20px] xl:py-[18px] xl:px-[24px] xs:text-[13.5px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto whitespace-nowrap font-medium">View All</button>
+        </div>
+        <div class="lg:grid lg:grid-cols-2 md:gap-[20px] xl:gap-[30px] mt-[30px] md:mt-[40px] xl:mt-[60px]">
+            <div class="border bg-white rounded-[10px] xl:rounede-[12px] p-[20px] md:p-[40px] xl:p-[50px]">
+                <img class="xs:w-[309px] tmd:w-[100%] tmd:h-[309px] lg:w-[549px] xs:h-[172px] lg:h-[266px] xl:w-[683px] xl:h-[380px] rounded-[8px] object-cover" src="img/img-1.png" alt="">
+                <div class="md:flex justify-between mt-[20px]">
+                    <span class="flex gap-[10px]">
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">4 Week</p>
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">Beginner</p>
+                    </span>
+                    <h1 class="xl:text-[20px] text-[16px] font-medium"><b>By John Smith</b></h1>
+                </div>
+                <h1 class="xl:text-[24px] md:text-[20px] xs:text-[18px] mt-[22px] font-semibold"><b>Web Design Fundamentals</b></h1>
+                <p class="xl:text-[18px] md:text-[16px] xs:text-[14px] mt-[3px] font-normal">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                <button class="border bg-gray-100 rounded-[6px] xl:rounded-[8px] w-[100%] xl:py-[16px] py-[12px] mt-[15px] font-medium">Get it Now</button>
+            </div>
+            <div class="border bg-white rounded-[10px] xl:rounede-[12px] p-[20px] md:p-[40px] xl:p-[50px] xs:mt-[15px]">
+                <img class="xs:w-[309px] tmd:w-[100%] tmd:h-[309px] lg:w-[549px] xs:h-[172px] lg:h-[266px] xl:w-[683px] xl:h-[380px] rounded-[8px] object-cover" src="img/img-4.png" alt="">
+                <div class="md:flex justify-between mt-[20px]">
+                    <span class="flex gap-[10px]">
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">6 Week</p>
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">Intermediate</p>
+                    </span>
+                    <h1 class="xl:text-[20px] text-[16px] font-medium"><b>By Emily Johnson</b></h1>
+                </div>
+                <h1 class="xl:text-[24px] md:text-[20px] xs:text-[18px] mt-[22px] font-semibold"><b>UI/UX Design</b></h1>
+                <p class="xl:text-[18px] md:text-[16px] xs:text-[14px] mt-[3px] font-normal">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                <button class="border bg-gray-100 rounded-[6px] xl:rounded-[8px] w-[100%] xl:py-[16px] py-[12px] mt-[15px] font-medium">Get it Now</button>
+            </div>
+        </div>
+        <div class="lg:grid lg:grid-cols-2 md:gap-[20px] xl:gap-[30px] mt-[15px] md:mt-[20px] xl:mt-[30px]">
+            <div class="border bg-white rounded-[10px] xl:rounede-[12px] p-[20px] md:p-[40px] xl:p-[50px]">
+                <img class="xs:w-[309px] tmd:w-[100%] tmd:h-[309px] lg:w-[549px] xs:h-[172px] lg:h-[266px] xl:w-[683px] xl:h-[380px] rounded-[8px] object-cover" src="img/img-7.png" alt="">
+                <div class="md:flex justify-between mt-[20px]">
+                    <span class="flex gap-[10px]">
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">8 Week</p>
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">Intermediate</p>
+                    </span>
+                    <h1 class="xl:text-[20px] text-[16px] font-medium"><b>By David Brown</b></h1>
+                </div>
+                <h1 class="xl:text-[24px] md:text-[20px] xs:text-[18px] mt-[22px] font-semibold"><b>Mobile App Development</b></h1>
+                <p class="xl:text-[18px] md:text-[16px] xs:text-[14px] mt-[3px] xl:h-[108px] font-normal">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                <button class="border bg-gray-100 rounded-[6px] xl:rounded-[8px] w-[100%] xl:py-[16px] py-[12px] mt-[15px] font-medium">Get it Now</button>
+            </div>
+            <div class="border bg-white rounded-[10px] xl:rounede-[12px] p-[20px] md:p-[40px] xl:p-[50px] xs:mt-[15px]">
+                <img class="xs:w-[309px] tmd:w-[100%] tmd:h-[309px] lg:w-[549px] xs:h-[172px] lg:h-[266px] xl:w-[683px] xl:h-[380px] rounded-[8px] object-cover" src="img/img-10.png" alt="">
+                <div class="md:flex justify-between mt-[20px]">
+                    <span class="flex gap-[10px]">
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">10 Week</p>
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">Beginner</p>
+                    </span>
+                    <h1 class="xl:text-[20px] text-[16px] font-medium"><b>By Sarah Thompson</b></h1>
+                </div>
+                <h1 class="xl:text-[24px] md:text-[20px] xs:text-[18px] mt-[22px] font-semibold"><b>Graphic Design for Beginners</b></h1>
+                <p class="xl:text-[18px] md:text-[16px] xs:text-[14px] mt-[3px] font-normal">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                <button class="border bg-gray-100 rounded-[6px] xl:rounded-[8px] w-[100%] xl:py-[16px] py-[12px] mt-[15px] font-medium">Get it Now</button>
+            </div>
+        </div>
+        <div class="lg:grid lg:grid-cols-2 md:gap-[20px] xl:gap-[30px] mt-[15px] md:mt-[20px] xl:mt-[30px]">
+            <div class="border bg-white rounded-[10px] xl:rounede-[12px] p-[20px] md:p-[40px] xl:p-[50px]">
+                <img class="xs:w-[309px] tmd:w-[100%] tmd:h-[309px] lg:w-[549px] xs:h-[172px] lg:h-[266px] xl:w-[683px] xl:h-[380px] rounded-[8px] object-cover" src="img/img-13.png" alt="">
+                <div class="md:flex justify-between mt-[20px]">
+                    <span class="flex gap-[10px]">
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">10 Week</p>
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">Intermediate</p>
+                    </span>
+                    <h1 class="xl:text-[20px] text-[16px] font-medium"><b>By Michael Adams</b></h1>
+                </div>
+                <h1 class="xl:text-[24px] md:text-[20px] xs:text-[18px] mt-[22px] font-semibold"><b>Front-End Web Development</b></h1>
+                <p class="xl:text-[18px] md:text-[16px] xs:text-[14px] mt-[3px] font-normal">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                <button class="border bg-gray-100 rounded-[6px] xl:rounded-[8px] w-[100%] xl:py-[16px] py-[12px] mt-[15px] font-medium">Get it Now</button>
+            </div>
+            <div class="border bg-white rounded-[10px] xl:rounede-[12px] p-[20px] md:p-[40px] xl:p-[50px] xs:mt-[15px]">
+                <img class="xs:w-[309px] tmd:w-[100%] tmd:h-[309px] lg:w-[549px] xs:h-[172px] lg:h-[266px] xl:w-[683px] xl:h-[380px] rounded-[8px] object-cover" src="img/img-16.png" alt="">
+                <div class="md:flex justify-between mt-[20px]">
+                    <span class="flex gap-[10px]">
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">6 Week</p>
+                        <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] text-[14px] font-normal">Advance</p>
+                    </span>
+                    <h1 class="xl:text-[20px] text-[16px] font-medium"><b>By Jennifer Wilson</b></h1>
+                </div>
+                <h1 class="xl:text-[24px] md:text-[20px] xs:text-[18px] mt-[22px] font-semibold"><b>Advanced JavaScript</b></h1>
+                <p class="xl:text-[18px] md:text-[16px] xs:text-[14px] mt-[3px] font-normal">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+                <button class="border bg-gray-100 rounded-[6px] xl:rounded-[8px] w-[100%] xl:py-[16px] py-[12px] mt-[15px] font-medium">Get it Now</button>
+            </div>
+        </div>
+        
+    </section>
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px]">
+        <div class="xs:flex-wrap md:flex mt-[20px] md:mt-[60px] xl:mt-[100px]">
+            <div class="md:mr-auto">
+                <h1 class="text-[28px] md:text-[38px] xl:text-[48px] font-semibold"><b>Our Testimonials</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[96px] h-[49px] xl:w-[120px] xl:h-[63px] py-[14px] px-[20px] xl:py-[18px] xl:px-[24px]  xs:text-[13.5px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto whitespace-nowrap font-medium">View All</button>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-[30px] mt-[30px] md:mt-[40px] xl:mt-[60px]">
+            <div>
+                <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px]">
+                    <p class="xl:text-[18px] md:text-[16px] text-[14px] tmd:h-[168px] lg:h-[120px] font-normal">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                </div>
+                <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                    <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-1.png" alt="">
+                    <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Sarah L</h1>
+                    <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                </div>
+            </div>
+            
+
+            <div>
+                <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px] xs:mt-[15px]">
+                    <p class="xl:text-[18px] md:text-[16px] text-[14px] lg:h-[120px] font-normal">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                </div>
+                <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                    <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-2.png" alt="">
+                    <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Jason M</h1>
+                    <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px] xs:mt-[15px]">
+                    <p class="xl:text-[18px] md:text-[16px] text-[14px] tmd:h-[168px] lg:h-[120px] font-normal">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                </div>
+                <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                    <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-3.png" alt="">
+                    <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Emily R</h1>
+                    <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px] xs:mt-[15px]">
+                    <p class="xl:text-[18px] md:text-[16px] text-[14px] lg:h-[120px] font-normal">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                </div>
+                <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                    <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-4.png" alt="">
+                    <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Michal K</h1>
+                    <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px]">
+        <div class="xs:flex-wrap md:flex mt-[20px] md:mt-[60px] xl:mt-[100px]">
+            <div class="md:mr-auto">
+                <h1 class="text-[28px] md:text-[38px] xl:text-[48px] font-semibold"><b>Our Pricing</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            </div>
+            <div class="flex border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[195px] h-[69px] xl:w-[272px] xl:h-[79px] tmd:p-[10px] p-[12px] text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto">
+                <button class="border bg-orange-500 rounded-[6px] text-white py-[10px] px-[18px] xl:py-[14px] xl:px-[30px] text-[14px] xl:text-[18px] font-medium">Monthly</button>
+                <button class="border rounded-[6px] py-[10px] px-[18px] xl:py-[14px] xl:px-[30px] text-[14px] xl:text-[18px] font-medium">Yearly</button>
+            </div>
+            <!-- <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[96px] h-[49px] xl:w-[120px] xl:h-[63px] py-[14px] px-[20px] xl:py-[18px] xl:px-[24px] text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto">View All</button>
+            <button>Yearly</button> -->
+        </div>
+        <div class="border rounded-[12px] bg-white xs:p-[20px] tmd:p-[25px] lg:p-[40px] xl:p-[30px] md:grid grid-cols-2 md:gap-[20px] xl:gap-[0px] mt-[30px] md:mt-[40px] xl:mt-[60px]">
+            <div class="border border-white rounded-[12px] xl:px-[30px] xl:py-[35px] xs:mt-[15px]">
+                <div class="border xs:p-[13px] tmd:p-[15px] lg:p-[15px] xl:pt-[40px] rounded-[12px]">
+                        <p class="bg-orange-200 ml-auto mr-auto text-center lg:w-[370px] py-[8px] md:py-[10px] xl:py-[12px] rounded-[4px] xl:rounded-[6px] text-[16px] md:text-[18px] xl:text-[22px] font-medium">Free Plan</p>
+                        <h1 class="xl:text-[80px] text-center font-semibold"><b>$0</b><span class="xl:text-[20px] font-medium">/month</span></h1>
+    
+                <div>
+                        <h1 class="text-[18px] xl:text-[20px] text-center mt-[5px] font-medium">Available Features</h1>
+                    <div class=" xl:px-[50px] xl:py-[30px] xl:rounded-[8px]">
+                        <div class="border rounded-t-[8px] xs:p-[10px] tmd:p-[8px] grid gap-[10px] lg:p-[17px]">
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited access to all courses.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited course materials and resources.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Priority support from instructors.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Course completion certificates.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Ad-free experience.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-xmark border text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px] lg:h-[22px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Access to exclusive Pro Plan community forums.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-xmark border text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Early access to new courses and updates.</p>
+                            </div>
+                            
+                        </div>
+                        <button class="border bg-orange-500 w-[100%] py-[15px] xl:py-[20px] xl:px-[24px] rounded-b-[8px] text-white text-[14px] xl:text-[18px] font-semibold">Get Started</button>
+                        
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+
+            <div class="border border-white rounded-[12px] xl:px-[30px] xl:py-[35px] xs:mt-[15px]">
+                <div class="border xs:p-[13px] tmd:p-[15px] lg:p-[15px] xl:pt-[40px] rounded-[12px]">
+                        <p class="bg-orange-200 ml-auto mr-auto text-center lg:w-[370px] py-[8px] md:py-[10px] xl:py-[12px] rounded-[4px] xl:rounded-[6px] text-[16px] md:text-[18px] xl:text-[22px] font-medium">Pro Plan</p>
+                        <h1 class="xl:text-[80px] text-center font-semibold"><b>$79</b><span class="xl:text-[20px] font-medium">/month</span></h1>
+    
+                    <div>
+                        <h1 class="text-[18px] xl:text-[20px] text-center mt-[5px] font-medium">Available Features</h1>
+                    <div class=" xl:px-[50px] xl:py-[30px] xl:rounded-[8px]">
+                        <div class="border rounded-t-[8px] xs:p-[10px] tmd:p-[8px] grid gap-[10px] lg:p-[17px]">
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited access to all courses.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited course materials and resources.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Priority support from instructors.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Course completion certificates.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Ad-free experience.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px] lg:h-[22px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Access to exclusive Pro Plan community forums.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px] xl:h-[28px]" style="color: #050505;"></i>
+                                <p class="xl:px-[10px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Early access to new courses and updates.</p>
+                            </div>
+                            
+                        </div>
+                        <button class="border bg-orange-500 w-[100%] py-[15px] xl:py-[20px] xl:px-[24px] rounded-b-[8px] text-white text-[14px] xl:text-[18px] font-semibold">Get Started</button>
+                        
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] border bg-white rounded-[12px] md:grid md:grid-cols-2 xl:gap-[70px] tmd:gap-[40px] lg:gap-[80px] p-[24px] tmd:p-[40px] lg:p-[80px] xl:p-[100px]">
+        <div class="">
+            <h1 class="text-[28px] lg::text-[38px] xl:text-[48px] font-semibold"><b>Frequently Asked Questions</b></h1>
+            <p class="text-[14px] lg::text-[16px] xl:text-[18px] font-normal">Still you have any questions? Contact our Team via support@skillbridge.com</p>
+            <button class="border rounded-[6px] mt-[20px] xl:rounded-[8px] text-[14px] md:text-[16px] xl:text-[18px] xl:py-[24px] py-[14px] px-[20px] font-medium">See All FAQ’s</button>
+        </div>
+        <div class="border rounded-[12px] p-[13px] xs:mt-[30px]">
+            <span class="grid gap-[20px] md:p-[10px]">
+                <span class="flex">
+                    <h1 class="xl:text-[20px] font-medium">Can I enroll in multiple courses at once? </h1>
+                    <i class="fa-solid fa-xmark border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[22px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <p class="xl:text-[18px] font-normal">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                <span class="flex">
+                    <p class="xl:text-[18px] font-medium">Enrollment Process for Different Courses</p>
+                    <i class="fa-solid fa-arrow-right border bg-white rounded-[50%] ml-auto text-[12px] xl:text-[17px] p-[6px] xl:p-[12px] md:h-[25px] xl:h-[42px] xs:h-[25px]" style="color: #050505;"></i>
+                </span>
+                
+            </span>
+
+            <div class="mt-[20px]">
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xs:p-[10px xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">What kind of support can I expect from instructors?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are the courses self-paced or do they have specific start and end dates?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are there any prerequisites for the courses?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Can I download the course materials for offline access?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="md:flex bg-white mt-[30px] md:mt-[85px] xl:mt-[120px] xs:py-[50px] xs:px-[20px] xl:px-[100px] xl:pt-[70px] xl:pb-[50px] lg:px-[80px] lg:pt-[50px] lg:pb-[40px] tmd:px-[40px] tmd:pt-[40px] tmd:pb-[30px] justify-between">
+        <div class="grid xl:gap-[0px]">
+            <h1 class="text-[20px] md:text-[21px] xl:text-[23px] pl-[5px] font-extrabold"><b>LOGO</b></h1>
+            <span class="flex mt-[20px]">
+                <a href="mailto:hello@skillbridge.com">
+                    <i class="fa-solid fa-envelope xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #050505;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="mailto:hello@skillbridge.com">hello@skillbridge.com</a></p>
+            </span>
+            <span class="flex">
+                <a href="tel:+91 91813 22309">
+                    <i class="fa-solid fa-phone xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #080808;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="tel:+91 91813 22309">+91 91813 22309</a></p>
+            </span>
+            <span class="flex">
+                <i class="fa-solid fa-location-dot xs:pt-[4px] md:p-[5px] xl:p-[5px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #0d0d0d;"></i>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal">Somewhere in the World</p>
+            </span>
+        </div>
+        <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:gap-[40px] md:gap-[15px] xs:mt-[20px] xl:text-[18px] md:text-[16px] text-[14px]">
+            <div class="grid xl:gap-[8px]">
+                <h1 class="font-semibold"><b>Home</b></h1>
+                <h1 class="mt-[8px] font-normal">Benefits</h1>
+                <h1 class="font-normal">Our Courses</h1>
+                <h1 class="font-normal">Our Testimonials</h1>
+                <h1 class="font-normal">Our FAQ</h1>
+            </div>
+            <div class="">
+                <h1 class="font-semibold"><b>About Us</b></h1>
+                <h1 class="mt-[9px] xl:mt-[14px] font-normal">Company</h1>
+                <h1 class="xl:mt-[9px] font-normal">Achievements</h1>
+                <h1 class="xl:mt-[9px] font-normal">Our Goals</h1>
+                <h1></h1>
+            </div>
+            <div class="xs:mt-[10px]">
+                <h1 class="font-semibold"><b>Social Profiles</b></h1>
+                <span class="flex xs:gap-[20px] xl:gap-[10px] md:gap-[10px] mt-[10px]">
+                    <i class="fa-brands fa-facebook xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #080808;"></i>
+                    <i class="fa-brands fa-twitter xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #050505;"></i>
+                    <i class="fa-brands fa-linkedin xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #0a0a0a;"></i>
+                </span>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="bg-white text-center text-[14px] xl:text-[18px] h-[45px] font-normal">
+        <p>© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+    
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+    w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
+w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[98px] xl:h-[34px] 
+w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
+w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
+w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
+w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
+w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
+    px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
+px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
+px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
+px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
+px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
+px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
+px-[30px] py-[20px] xl:px-[40px] xl:py-[30px] -->

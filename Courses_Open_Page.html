@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'xs': {'min': '320px' , 'max' : '639px'},
+                    'tmd': {'min': '768px' , 'max' : '1023px'}
+                },
+                aspectRatio: {
+                    '3/2': '3 / 2',
+                }
+            }
+          }
+        }
+      </script>
+
+    <title>Courses Open Page</title>
+    <style>
+        body{
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class=" bg-gray-100">
+    <div class="text-white mx-[20px] bg-orange-500 text-center rounded-[6px] xs:text-[12px] md:text-[13px] xl:text-[18px] xs:mt-[10px] md:mt-[15px] h-[41px] pt-[9px]">
+        <p class="xs:pt-[3px] font-normal">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+    </div>
+
+    <nav class="flex justify-between items-center w-[86%] md:w-[90%] lg:w-[90%]
+          mx-auto container mt-2 font-normal">
+          
+          <!-- width-92 che tyaj changes karavanu raheshe atale che ne thai jase space -->
+            <div>
+                <h1 class="text-[17px] xl:text-[21px]"><b>LOGO</b></h1>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-[15px] xs:bg-gray-300 xs:p-[10px] xs:rounded-[12px] xs:ml-auto md:gap-8 text-[14px] xl:text-[18px]">
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Courses_Page.html   ">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="About_Us_Page.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Pricing_Page.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Contact_Page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center xs:gap-[10px] md:gap-6 ">
+                <li class="list-none hover:text-red-500 text-[14px] xl:text-[18px] font-normal"><a href="Sign_Up_Page.html">Sign Up</a></li>
+                <button class="bg-orange-500 text-white xs:px-[15px] xs:py-[8px] md:px-5 md:py-2 rounded-md hover:bg-orange-600 text-[14px] xl:text-[18px] font-normal"><a href="Login_Page.html">Sign in</a></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    
+    </nav>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[87%] mx-auto mt-[60px] md:mt-[110px] xl:mt-[160px] md:grid md:grid-cols-2 xl:gap-[80px] md:gap-[60px] gap-[16px]">
+        <h1 class="font-semibold xl:text-[48px] md:text-[38px] text-[28px] w-auto self-center">UI/UX Design Course</h1>
+        <p class="font-normal xl:text-[18px] md:text-[16px] text-[14px] mt-[15px]">Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the curriculum</p>
+    </section>
+    <hr class="mx-[20px] mt-[30px]">
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[20px] md:mt-[75px] xl:mt-[110px]">
+        <div>
+            <img class="w-[100%] h-[247px] xl:h-[790px] md:h-[649px] rounded-[10px] xl:rounded-[12px]" src="img/img-4.png" alt="">
+        </div>
+    </section>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[20px] md:mt-[75px] xl:mt-[110px]">
+        <div class="grid md:grid-cols-2 xl:gap-[30px] md:gap-[20px] gap-[10px]">
+            <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:p-[50px] lg:p-[40px] tmd:p-[39px] p-[30px]">
+                <h1 class="text-right xl:text-[80px] md:text-[60px] text-[50px] font-bold">01</h1>
+                <h1 class="xl:text-[24px] md:text-[20px] text-[18px] font-semibold">Introduction to UI/UX Design</h1>
+                <div class="grid xl:gap-[20px] gap-[16px]">
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[390px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Understanding UI/UX Design Principles</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 01</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[153px] xl:h-[48px] w-[120px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 45 Minutes</p>
+                    </div>
+                    <div class="border-[3px] tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] border-orange-200 xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Importance of User-Centered Design</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 02</p>
+                        </span>
+                        <p class="border bg-orange-200 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">The Role of UI/UX Design in Product Development</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 03</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[153px] xl:h-[48px] w-[120px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 45 Minutes</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:p-[50px] md:p-[40px] p-[30px]">
+                <h1 class="text-right xl:text-[80px] md:text-[60px] text-[50px] font-bold">02</h1>
+                <h1 class="xl:text-[24px] md:text-[20px] text-[18px] font-semibold">User Research and Analysis</h1>
+                <div class="grid xl:gap-[20px] gap-[16px]">
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[390px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Conducting User Research and Interviews</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 01</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Analyzing User Needs and Behavior</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 02</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Creating User Personas and Scenarios</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 03</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[153px] xl:h-[48px] w-[120px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 45 Minutes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:p-[50px] md:p-[40px] p-[30px]">
+                <h1 class="text-right xl:text-[80px] md:text-[60px] text-[50px] font-bold">03</h1>
+                <h1 class="xl:text-[24px] md:text-[20px] text-[18px] font-semibold">Wireframing and Prototyping</h1>
+                <div class="grid xl:gap-[20px] gap-[16px]">
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[390px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Introduction to Wireframing Tools and Techniques</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 01</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Creating Low-Fidelity Wireframes</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 02</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Prototyping and Interactive Mockups</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 03</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:p-[50px] md:p-[40px] p-[30px]">
+                <h1 class="text-right xl:text-[80px] md:text-[60px] text-[50px] font-bold">04</h1>
+                <h1 class="xl:text-[24px] md:text-[20px] text-[18px] font-semibold">Visual Design and Branding</h1>
+                <div class="grid xl:gap-[20px] gap-[16px]">
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[390px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Color Theory and Typography in UI Design</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 01</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Visual Hierarchy and Layout Design</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 02</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Creating a Strong Brand Identity</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 03</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[153px] xl:h-[48px] w-[120px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 45 Minutes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:p-[50px] md:p-[40px] p-[30px]">
+                <h1 class="text-right xl:text-[80px] md:text-[60px] text-[50px] font-bold">05</h1>
+                <h1 class="xl:text-[24px] md:text-[20px] text-[18px] font-semibold">Usability Testing and Iteration</h1>
+                <div class="grid xl:gap-[20px] gap-[16px]">
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[390px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Usability Testing Methods and Techniques</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 01</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[105px] xl:h-[48px] w-[80px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 1 Hour</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Analyzing Usability Test Results</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 02</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[153px] xl:h-[48px] w-[120px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 45 Minutes</p>
+                    </div>
+                    <div class="border tmd:w-[255px] tmd:h-[160px] md:w-[370px] md:h-[108px] xl:w-[550px] xl:h-[135px] xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] xs:p-[24px] lg:flex grid md:gap-[6px]">
+                        <span class="xl:w-[400px] xl:h-[63px] lg:w-[250px] lg:h-[70px] tmd:w-[210px] w-[250px] h-[71px]">
+                            <h1 class="xl:text-[20px] text-[16px] font-medium">Iterating and Improving UX Designs</h1>
+                            <p class="xl:text-[18px] text-[14px] font-normal">Lesson 03</p>
+                        </span>
+                        <p class="border bg-gray-100 rounded-[6px] xl:w-[153px] xl:h-[48px] w-[120px] h-[40px] xl:text-[18px] text-[14px] xl:py-[12px] xl:px-[14px] p-[10px] whitespace-nowrap font-normal"><i class="fa-regular fa-clock" style="color: #080808;"></i> 45 Minutes</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="md:flex bg-white mt-[30px] md:mt-[85px] xl:mt-[120px] xs:py-[50px] xs:px-[20px] xl:px-[100px] xl:pt-[70px] xl:pb-[50px] lg:px-[80px] lg:pt-[50px] lg:pb-[40px] tmd:px-[40px] tmd:pt-[40px] tmd:pb-[30px] justify-between">
+        <div class="grid xl:gap-[0px]">
+            <h1 class="text-[20px] md:text-[21px] xl:text-[23px] pl-[5px] font-extrabold"><b>LOGO</b></h1>
+            <span class="flex mt-[20px]">
+                <a href="mailto:hello@skillbridge.com">
+                    <i class="fa-solid fa-envelope xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #050505;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="mailto:hello@skillbridge.com">hello@skillbridge.com</a></p>
+            </span>
+            <span class="flex">
+                <a href="tel:+91 91813 22309">
+                    <i class="fa-solid fa-phone xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #080808;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="tel:+91 91813 22309">+91 91813 22309</a></p>
+            </span>
+            <span class="flex">
+                <i class="fa-solid fa-location-dot xs:pt-[4px] md:p-[5px] xl:p-[5px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #0d0d0d;"></i>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal">Somewhere in the World</p>
+            </span>
+        </div>
+        <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:gap-[40px] md:gap-[15px] xs:mt-[20px] xl:text-[18px] md:text-[16px] text-[14px]">
+            <div class="grid xl:gap-[8px]">
+                <h1 class="font-semibold"><b>Home</b></h1>
+                <h1 class="mt-[8px] font-normal">Benefits</h1>
+                <h1 class="font-normal">Our Courses</h1>
+                <h1 class="font-normal">Our Testimonials</h1>
+                <h1 class="font-normal">Our FAQ</h1>
+            </div>
+            <div class="">
+                <h1 class="font-semibold"><b>About Us</b></h1>
+                <h1 class="mt-[9px] xl:mt-[14px] font-normal">Company</h1>
+                <h1 class="xl:mt-[9px] font-normal">Achievements</h1>
+                <h1 class="xl:mt-[9px] font-normal">Our Goals</h1>
+                <h1></h1>
+            </div>
+            <div class="xs:mt-[10px]">
+                <h1 class="font-semibold"><b>Social Profiles</b></h1>
+                <span class="flex xs:gap-[20px] xl:gap-[10px] md:gap-[10px] mt-[10px]">
+                    <i class="fa-brands fa-facebook xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #080808;"></i>
+                    <i class="fa-brands fa-twitter xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #050505;"></i>
+                    <i class="fa-brands fa-linkedin xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #0a0a0a;"></i>
+                </span>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="bg-white text-center text-[14px] xl:text-[18px] h-[45px] font-normal">
+        <p>© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+
+
+</body>
+</html>

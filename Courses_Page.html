@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'xs': {'min': '320px' , 'max' : '639px'},
+                    'tmd': {'min': '768px' , 'max' : '1023px'}
+                },
+                aspectRatio: {
+                    '3/2': '3 / 2',
+                }
+            }
+          }
+        }
+      </script>
+
+    <title>Courses Page</title>
+    <style>
+        body{
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class=" bg-gray-100">
+    <div class="text-white mx-[20px] bg-orange-500 text-center rounded-[6px] xs:text-[12px] md:text-[13px] xl:text-[18px] xs:mt-[10px] md:mt-[15px] h-[41px] pt-[9px]">
+        <p class="xs:pt-[3px] font-normal">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+    </div>
+
+    <nav class="flex justify-between items-center w-[86%] md:w-[90%] lg:w-[90%]
+          mx-auto container mt-2 font-normal">
+          
+          <!-- width-92 che tyaj changes karavanu raheshe atale che ne thai jase space -->
+            <div>
+                <h1 class="text-[17px] xl:text-[21px]"><b>LOGO</b></h1>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-[15px] xs:bg-gray-300 xs:p-[10px] xs:rounded-[12px] xs:ml-auto md:gap-8 text-[14px] xl:text-[18px]">
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Courses_Page.html">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="About_Us_Page.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Pricing_Page.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Contact_Page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center xs:gap-[10px] md:gap-6 ">
+                <li class="list-none hover:text-red-500 text-[14px] xl:text-[18px] font-normal"><a href="Sign_Up_Page.html">Sign Up</a></li>
+                <button class="bg-orange-500 text-white xs:px-[15px] xs:py-[8px] md:px-5 md:py-2 rounded-md hover:bg-orange-600 text-[14px] xl:text-[18px] font-normal"><a href="Login_Page.html">Sign in</a></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    
+    </nav> 
+
+    <section class="w-[86%] md:w-[90%] lg:w-[87%] mx-auto mt-[80px] md:mt-[130px] xl:mt-[180px] md:grid md:grid-cols-2 xl:gap-[80px] md:gap-[60px] gap-[16px]">
+        <h1 class="font-semibold xl:text-[48px] md:text-[38px] text-[28px] w-auto">Online Courses on Design and Development</h1>
+        <p class="font-normal xl:text-[18px] md:text-[16px] text-[14px] mt-[15px]">Welcome to our online course page, where you can enhance your skills in design and development. Choose from our carefully curated selection of 10 courses designed to provide you with comprehensive knowledge and practical experience. Explore the courses below and find the perfect fit for your learning journey.</p>
+    </section>
+    <hr class="mx-[20px] mt-[30px]">
+
+    <section class="border bg-white w-[86%] h-[1180px] md:w-[90%] md:h-[710px] lg:w-[90%] lg:h-[860px] xl:h-[1015px] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] p-[24px] md:p-[40px] xl:p-[50px] xl:rounded-[12px] md:rounded-[10px] rounded-[8px]">
+        <div class="xs:flex-wrap md:flex justify-end ">
+            <div class="md:mr-auto">
+                <h1 class="text-[18px] md:text-[20px] xl:text-[24px] font-semibold"><b>Web Design Fundamentals</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[105px] h-[49px] md:w-[119px] md:h-[49px] xl:w-[170px] xl:h-[63px] xs:px-[px] md:py-[14px] md:px-[20px] xl:py-[18px] xl:px-[24px] text-[14px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto font-medium whitespace-nowrap">View Course</button>
+        </div>
+        <div>
+            <div class="grid grid-cols-3 gap-[7px] tmd:gap-[15px] lg::gap-[20px] xl:gap-[30px] mt-[30px]">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-1.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-2.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-3.png" alt="">
+            </div>
+            <div class="md:flex justify-between mt-[20px] grid xs:gap-[16px]">
+                <span class="flex gap-[10px]">
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">4 Weeks</p>
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">Beginner</p>
+                </span>
+                <h1 class="xl:text-[20px] md:text-[18px] text-[16px] md:pt-[8px] xl:pt-[12px] font-medium"><b>By John Smith</b></h1>
+            </div>
+            <div class="xl:text-[22px] md:text-[18px] text-[16px]">
+                <h1 class="xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] py-[14px] px-[20px] font-semibold">Curriculum</h1>
+                <div class="md:grid md:grid-cols-5">
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px] ">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">01</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-medium">Introduction to HTML</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">02</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-medium">Styling with CSS</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">03</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-medium">Introduction to Responsive Design</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">04</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-medium">Design Principles for Web</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">05</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-medium">Building a Basic Website</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border bg-white w-[86%] h-[1180px] md:w-[90%] md:h-[710px] lg:w-[90%] lg:h-[860px] xl:h-[1015px] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] p-[24px] md:p-[40px] xl:p-[50px] xl:rounded-[12px] md:rounded-[10px] rounded-[8px]">
+        <div class="xs:flex-wrap md:flex justify-end ">
+            <div class="md:mr-auto">
+                <h1 class="text-[18px] md:text-[20px] xl:text-[24px] font-semibold"><b>UI/UX Design</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[105px] h-[49px] md:w-[119px] md:h-[49px] xl:w-[170px] xl:h-[63px] xs:px-[px] md:py-[14px] md:px-[20px] xl:py-[18px] xl:px-[24px] text-[14px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto font-medium whitespace-nowrap"><a href="Courses_Open_Page.html">View Course</a></button>
+        </div>
+        <div>
+            <div class="grid grid-cols-3 gap-[7px] tmd:gap-[15px] lg::gap-[20px] xl:gap-[30px] mt-[30px]">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-4.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-5.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-6.png" alt="">
+            </div>
+            <div class="md:flex justify-between mt-[20px] grid xs:gap-[16px]">
+                <span class="flex gap-[10px]">
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">6 Weeks</p>
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">Intermediate</p>
+                </span>
+                <h1 class="xl:text-[20px] md:text-[18px] text-[16px] md:pt-[8px] xl:pt-[12px] font-medium"><b>By Emily Johnson</b></h1>
+            </div>
+            <div class="xl:text-[22px] md:text-[18px] text-[16px]">
+                <h1 class="xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] py-[14px] px-[20px] font-semibold">Curriculum</h1>
+                <div class="md:grid md:grid-cols-5">
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px] ">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">01</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Introduction to UI/UX Design</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">02</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">User Research and Personas</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">03</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Wireframing and Prototyping</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">04</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Visual Design and Branding</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">05</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Usability Testing and Iteration</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border bg-white w-[86%] h-[1180px] md:w-[90%] md:h-[710px] lg:w-[90%] lg:h-[860px] xl:h-[1015px] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] p-[24px] md:p-[40px] xl:p-[50px] xl:rounded-[12px] md:rounded-[10px] rounded-[8px]">
+        <div class="xs:flex-wrap md:flex justify-end ">
+            <div class="md:mr-auto">
+                <h1 class="text-[18px] md:text-[20px] xl:text-[24px] font-semibold"><b>Mobile App Development</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[105px] h-[49px] md:w-[119px] md:h-[49px] xl:w-[170px] xl:h-[63px] xs:px-[px] md:py-[14px] md:px-[20px] xl:py-[18px] xl:px-[24px] text-[14px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto font-medium whitespace-nowrap">View Course</button>
+        </div>
+        <div>
+            <div class="grid grid-cols-3 gap-[7px] tmd:gap-[15px] lg::gap-[20px] xl:gap-[30px] mt-[30px]">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-7.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-8.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-9.png" alt="">
+            </div>
+            <div class="md:flex justify-between mt-[20px] grid xs:gap-[16px]">
+                <span class="flex gap-[10px]">
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">8 Weeks</p>
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">Intermediate</p>
+                </span>
+                <h1 class="xl:text-[20px] md:text-[18px] text-[16px] md:pt-[8px] xl:pt-[12px] font-medium"><b>By David Brown</b></h1>
+            </div>
+            <div class="xl:text-[22px] md:text-[18px] text-[16px]">
+                <h1 class="xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] py-[14px] px-[20px] font-semibold">Curriculum</h1>
+                <div class="md:grid md:grid-cols-5">
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px] ">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">01</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Introduction to Mobile App Development</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">02</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Fundamentals of Swift Programming (iOS)</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">03</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Fundamentals of Kotlin Programming (Android)</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">04</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Building User Interfaces</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">05</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">App Deployment and Testing</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border bg-white w-[86%] h-[1180px] md:w-[90%] md:h-[710px] lg:w-[90%] lg:h-[860px] xl:h-[1015px] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] p-[24px] md:p-[40px] xl:p-[50px] xl:rounded-[12px] md:rounded-[10px] rounded-[8px]">
+        <div class="xs:flex-wrap md:flex justify-end ">
+            <div class="md:mr-auto">
+                <h1 class="text-[18px] md:text-[20px] xl:text-[24px] font-semibold"><b>Graphic Design for Beginners</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[105px] h-[49px] md:w-[119px] md:h-[49px] xl:w-[170px] xl:h-[63px] xs:px-[px] md:py-[14px] md:px-[20px] xl:py-[18px] xl:px-[24px] text-[14px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto font-medium whitespace-nowrap">View Course</button>
+        </div>
+        <div>
+            <div class="grid grid-cols-3 gap-[7px] tmd:gap-[15px] lg::gap-[20px] xl:gap-[30px] mt-[30px]">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-10.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-11.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-12.png" alt="">
+            </div>
+            <div class="md:flex justify-between mt-[20px] grid xs:gap-[16px]">
+                <span class="flex gap-[10px]">
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">10 Weeks</p>
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">Beginner</p>
+                </span>
+                <h1 class="xl:text-[20px] md:text-[18px] text-[16px] md:pt-[8px] xl:pt-[12px] font-medium"><b>By Sarah Thompson</b></h1>
+            </div>
+            <div class="xl:text-[22px] md:text-[18px] text-[16px]">
+                <h1 class="xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] py-[14px] px-[20px] font-semibold">Curriculum</h1>
+                <div class="md:grid md:grid-cols-5">
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px] ">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">01</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Introduction to Graphic Design</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">02</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Typography and Color Theory</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">03</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Layout Design and Composition</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">04</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Image Editing and Manipulation</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">05</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Designing for Print and Digital Media</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border bg-white w-[86%] h-[1180px] md:w-[90%] md:h-[710px] lg:w-[90%] lg:h-[860px] xl:h-[1015px] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] p-[24px] md:p-[40px] xl:p-[50px] xl:rounded-[12px] md:rounded-[10px] rounded-[8px]">
+        <div class="xs:flex-wrap md:flex justify-end ">
+            <div class="md:mr-auto">
+                <h1 class="text-[18px] md:text-[20px] xl:text-[24px] font-semibold"><b>Front-End Web Development</b></h1>
+                <p class="text-[14px] md:text-[16px] xl:text-[18px] md:w-[500px] xl:w-[950px] font-normal">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+            </div>
+            <button class="border bg-white rounded-[6px] xl:rounded-[8px] text-center w-[105px] h-[49px] md:w-[119px] md:h-[49px] xl:w-[170px] xl:h-[63px] xs:px-[px] md:py-[14px] md:px-[20px] xl:py-[18px] xl:px-[24px] text-[14px] md:text-[14px] xl:text-[18px] xs:mt-[15px] md:mt-auto font-medium whitespace-nowrap">View Course</button>
+        </div>
+        <div>
+            <div class="grid grid-cols-3 gap-[7px] tmd:gap-[15px] lg::gap-[20px] xl:gap-[30px] mt-[30px]">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-13.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-14.png" alt="">
+                <img class="xs:w-[96px] xs:h-[75px] tmd:w-[250px] tmd:h-[200px] lg:w-[386px] lg:h-[326px] xl:w-[478px] xl:h-[422px] xl:rounded-[8px] md:rounded-[6px] rounded-[4px]" src="img/img-15.png" alt="">
+            </div>
+            <div class="md:flex justify-between mt-[20px] grid xs:gap-[16px]">
+                <span class="flex gap-[10px]">
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">10 Weeks</p>
+                    <p class="border xl:rounded-[8px] px-[14px] py-[8px] xl:px-[16px] xl:py-[10px] xl:text-[18px] md:text-[16px] text-[14px] font-normal">Intermediate</p>
+                </span>
+                <h1 class="xl:text-[20px] md:text-[18px] text-[16px] md:pt-[8px] xl:pt-[12px] font-medium"><b>By Michael Adams</b></h1>
+            </div>
+            <div class="xl:text-[22px] md:text-[18px] text-[16px]">
+                <h1 class="xl:py-[24px] xl:px-[30px] md:py-[20px] md:px-[24px] py-[14px] px-[20px] font-semibold">Curriculum</h1>
+                <div class="md:grid md:grid-cols-5">
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px] ">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">01</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">HTML Fundamentals</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">02</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">CSS Styling and Layouts</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">03</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">JavaScript Basics</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">04</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Building Responsive Websites</p>
+                    </span>
+                    <span class="xl:py-[30px] xl:px-[50px] md:py-[24px] md:px-[40px] xs:p-[24px] grid xl:gap-[20px] md:gap-[16px] gap-[12px] xl:w-[199px] xl:h-[84px] md:w-[160px] md:h-[94px]">
+                        <h1 class="xl:text-[50px] lg:text-[40px] text-[30px] font-extrabold">05</h1>
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Introduction to Bootstrap and React</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="md:flex bg-white mt-[30px] md:mt-[85px] xl:mt-[120px] xs:py-[50px] xs:px-[20px] xl:px-[100px] xl:pt-[70px] xl:pb-[50px] lg:px-[80px] lg:pt-[50px] lg:pb-[40px] tmd:px-[40px] tmd:pt-[40px] tmd:pb-[30px] justify-between">
+        <div class="grid xl:gap-[0px]">
+            <h1 class="text-[20px] md:text-[21px] xl:text-[23px] pl-[5px] font-extrabold"><b>LOGO</b></h1>
+            <span class="flex mt-[20px]">
+                <a href="mailto:hello@skillbridge.com">
+                    <i class="fa-solid fa-envelope xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #050505;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="mailto:hello@skillbridge.com">hello@skillbridge.com</a></p>
+            </span>
+            <span class="flex">
+                <a href="tel:+91 91813 22309">
+                    <i class="fa-solid fa-phone xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #080808;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="tel:+91 91813 22309">+91 91813 22309</a></p>
+            </span>
+            <span class="flex">
+                <i class="fa-solid fa-location-dot xs:pt-[4px] md:p-[5px] xl:p-[5px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #0d0d0d;"></i>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal">Somewhere in the World</p>
+            </span>
+        </div>
+        <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:gap-[40px] md:gap-[15px] xs:mt-[20px] xl:text-[18px] md:text-[16px] text-[14px]">
+            <div class="grid xl:gap-[8px]">
+                <h1 class="font-semibold"><b>Home</b></h1>
+                <h1 class="mt-[8px] font-normal">Benefits</h1>
+                <h1 class="font-normal">Our Courses</h1>
+                <h1 class="font-normal">Our Testimonials</h1>
+                <h1 class="font-normal">Our FAQ</h1>
+            </div>
+            <div class="">
+                <h1 class="font-semibold"><b>About Us</b></h1>
+                <h1 class="mt-[9px] xl:mt-[14px] font-normal">Company</h1>
+                <h1 class="xl:mt-[9px] font-normal">Achievements</h1>
+                <h1 class="xl:mt-[9px] font-normal">Our Goals</h1>
+                <h1></h1>
+            </div>
+            <div class="xs:mt-[10px]">
+                <h1 class="font-semibold"><b>Social Profiles</b></h1>
+                <span class="flex xs:gap-[20px] xl:gap-[10px] md:gap-[10px] mt-[10px]">
+                    <i class="fa-brands fa-facebook xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #080808;"></i>
+                    <i class="fa-brands fa-twitter xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #050505;"></i>
+                    <i class="fa-brands fa-linkedin xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #0a0a0a;"></i>
+                </span>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="bg-white text-center text-[14px] xl:text-[18px] h-[45px] font-normal">
+        <p>© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

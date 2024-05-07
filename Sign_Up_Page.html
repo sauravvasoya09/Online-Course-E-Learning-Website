@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="app.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'xs': {'min': '320px' , 'max' : '639px'},
+                    'tmd': {'min': '768px' , 'max' : '1023px'}
+                },
+                aspectRatio: {
+                    '3/2': '3 / 2',
+                }
+            }
+          }
+        }
+      </script>
+
+    <title>Login Page</title>
+    <style>
+        body{
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class=" bg-gray-100">
+    <div class="text-white mx-[20px] bg-orange-500 text-center rounded-[6px] xs:text-[12px] md:text-[13px] xl:text-[18px] xs:mt-[10px] md:mt-[15px] h-[41px] pt-[9px]">
+        <p class="xs:pt-[3px] font-normal">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+    </div>
+
+    <nav class="flex justify-between items-center w-[86%] md:w-[90%] lg:w-[90%]
+          mx-auto container mt-2 font-normal">
+          
+          <!-- width-92 che tyaj changes karavanu raheshe atale che ne thai jase space -->
+            <div>
+                <h1 class="text-[17px] xl:text-[21px]"><b>LOGO</b></h1>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-[15px] xs:bg-gray-300 xs:p-[10px] xs:rounded-[12px] xs:ml-auto md:gap-8 text-[14px] xl:text-[18px]">
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Courses_Page.html">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="About_Us_Page.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Pricing_Page.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Contact_Page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center xs:gap-[10px] md:gap-6 ">
+                <li class="list-none hover:text-red-500 text-[14px] xl:text-[18px] font-normal"><a href="Sign_Up_Page.html">Sign Up</a></li>
+                <button class="bg-orange-500 text-white xs:px-[15px] xs:py-[8px] md:px-5 md:py-2 rounded-md hover:bg-orange-600 text-[14px] xl:text-[18px] font-normal"><a href="Login_Page.html">Sign in</a></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    
+    </nav>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] xs:justify-center grid md:grid-cols-2 xl:gap-[100px] md:gap-[80px] gap-[50px]">
+        <div class="grid xl:gap-[80px] md:gap-[60px] gap-[40px] xs:order-2 self-center">
+            <span>
+                <h1 class="xl:text-[38px] md:text-[30px] text-[28px] font-medium">Students Testimonials</h1>
+                <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            </span>
+            <span>
+                <div class="border bg-white p-[30px] md:p-[30px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px]">
+                    <p class="xl:text-[18px] md:text-[16px] text-[14px] tmd:h-[168px] lg:h-[120px] font-normal">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                </div>
+                <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[30px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                    <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-1.png" alt="">
+                    <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[5px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Sarah L</h1>
+                    <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[8px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                </div>
+                <div class="xs:text-center md:text-right mt-[25px]">
+                    <i class="fa-solid fa-arrow-left border bg-white xl:rounded-[8px] rounded-[6px] xl:p-[14px] p-[12px] xl:mr-[15px] mr-[10px]" style="color: #080808;"></i>
+                    <i class="fa-solid fa-arrow-right border bg-white xl:rounded-[8px] rounded-[6px] xl:p-[14px] p-[12px]" style="color: #080808;"></i>
+                </div>
+            </span>
+        </div>
+        <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:py-[50px] lg:p-[40px] tmd:py-[25px] tmd:px-[20px] xs:p-[25px] xs:order-1">
+            <div class="grid xl:gap-[40px] md:gap-[30px]">
+                <span>
+                    <h1 class="xl:text-[48px] md:text-[38px] text-[28px] text-center font-semibold">Sign Up</h1>
+                    <p class="xl:text-[18px] md:text-[16px] text-[14px] text-center font-normal">Create an account to unlock exclusive features.</p>
+                </span>
+                <span class="">
+                    <div class="grid gap-[20px]">
+                        <span>
+                            <label for="fname" class="font-medium">Full Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter Your Name" class="xl:p-[24px] lg:p-[20px] py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm font-normal">
+                        </span>
+                        <span>
+                            <label for="fname" class="font-medium">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Your Email" class="xl:p-[24px] lg:p-[20px] py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm font-normal">
+                        </span>
+                        <span>
+                            <label for="password" class="font-medium">Password</label>
+                            <input type="password" id="pass" name="pass" placeholder="Enter Your Password" class="xl:p-[24px] lg:p-[20px] py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm font-normal"> 
+                        </span>
+                    </div>
+                    <span class="flex">
+                        <input type="checkbox" id="checkbox" required class="xl:w-[16px] xl:h-[16px] w-[12px] h-[12px] mt-[30px]">
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] self-center mt-[25px] px-[5px] font-normal">I agree with <span class="underline">Terms of Use</span> and <span class="underline">Privacy Policy</span> </p>
+                    </span>
+
+                    <button class="border bg-orange-500 font-medium text-center block xl:text-[18px] text-[14px] text-white xl:py-[18px] py-[14px] px-[20px] xl:rounded-[10px] md:rounded-[8px] rounded-[6px] mt-[20px] xl:w-[510px] lg:w-[340px] tmd:w-[255px] xs:w-[222px]" onclick="validate()">Sign Up</button>
+                    <span class="flex mt-[20px]">
+                        <hr class="xl:w-[243px] lg:w-[158px] tmd:w-[113px] xs:w-[107px] border-[1px] self-center">
+                        <p class="text-gray-400 px-[2px] font-normal">OR</p>
+                        <hr class="xl:w-[243px] lg:w-[158px] tmd:w-[113px] xs:w-[107px] border-[1px] self-center">
+                    </span>
+                    <span class="border bg-gray-100 flex justify-center xl:py-[20px] py-[16px] px-[24px] xl:rounded-[10px] md:rounded-[8px] rounded-[6px] mt-[25px]">
+                        <img src="img/google-logo.png" class="xl:w-[30px] w-[25px]">
+                        <p class="self-center xl:text-[18px] text-[14px] font-medium">Sign Up with Google</p>
+                    </span>
+                    <span class="flex justify-center mt-[20px] whitespace-nowrap">
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] hover:text-blue-600 font-normal"><a href="Login_Page.html">Already have an account? Login</a></p>
+                        <i class="fa-solid fa-square-arrow-up-right self-center xl:text-[20px] md:text-[16px] text-[14px] pl-[3px]" style="color: #050505;"></i>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="md:flex bg-white mt-[30px] md:mt-[85px] xl:mt-[120px] xs:py-[50px] xs:px-[20px] xl:px-[100px] xl:pt-[70px] xl:pb-[50px] lg:px-[80px] lg:pt-[50px] lg:pb-[40px] tmd:px-[40px] tmd:pt-[40px] tmd:pb-[30px] justify-between">
+        <div class="grid xl:gap-[0px]">
+            <h1 class="text-[20px] md:text-[21px] xl:text-[23px] pl-[5px] font-extrabold"><b>LOGO</b></h1>
+            <span class="flex mt-[20px]">
+                <a href="mailto:hello@skillbridge.com">
+                    <i class="fa-solid fa-envelope xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #050505;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="mailto:hello@skillbridge.com">hello@skillbridge.com</a></p>
+            </span>
+            <span class="flex">
+                <a href="tel:+91 91813 22309">
+                    <i class="fa-solid fa-phone xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #080808;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="tel:+91 91813 22309">+91 91813 22309</a></p>
+            </span>
+            <span class="flex">
+                <i class="fa-solid fa-location-dot xs:pt-[4px] md:p-[5px] xl:p-[5px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #0d0d0d;"></i>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal">Somewhere in the World</p>
+            </span>
+        </div>
+        <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:gap-[40px] md:gap-[15px] xs:mt-[20px] xl:text-[18px] md:text-[16px] text-[14px]">
+            <div class="grid xl:gap-[8px]">
+                <h1 class="font-semibold"><b>Home</b></h1>
+                <h1 class="mt-[8px] font-normal">Benefits</h1>
+                <h1 class="font-normal">Our Courses</h1>
+                <h1 class="font-normal">Our Testimonials</h1>
+                <h1 class="font-normal">Our FAQ</h1>
+            </div>
+            <div class="">
+                <h1 class="font-semibold"><b>About Us</b></h1>
+                <h1 class="mt-[9px] xl:mt-[14px] font-normal">Company</h1>
+                <h1 class="xl:mt-[9px] font-normal">Achievements</h1>
+                <h1 class="xl:mt-[9px] font-normal">Our Goals</h1>
+                <h1></h1>
+            </div>
+            <div class="xs:mt-[10px]">
+                <h1 class="font-semibold"><b>Social Profiles</b></h1>
+                <span class="flex xs:gap-[20px] xl:gap-[10px] md:gap-[10px] mt-[10px]">
+                    <i class="fa-brands fa-facebook xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #080808;"></i>
+                    <i class="fa-brands fa-twitter xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #050505;"></i>
+                    <i class="fa-brands fa-linkedin xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #0a0a0a;"></i>
+                </span>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="bg-white text-center text-[14px] xl:text-[18px] h-[45px] font-normal">
+        <p>© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

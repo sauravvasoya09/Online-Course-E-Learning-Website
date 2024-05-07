@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'xs': {'min': '320px' , 'max' : '639px'},
+                    'tmd': {'min': '768px' , 'max' : '1023px'}
+                },
+                aspectRatio: {
+                    '3/2': '3 / 2',
+                }
+            }
+          }
+        }
+      </script>
+
+    <title>Pricing Page</title>
+    <style>
+        body{
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class=" bg-gray-100">
+    <div class="text-white mx-[20px] bg-orange-500 text-center rounded-[6px] xs:text-[12px] md:text-[13px] xl:text-[18px] xs:mt-[10px] md:mt-[15px] h-[41px] pt-[9px]">
+        <p class="xs:pt-[3px] font-normal">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+    </div>
+
+    <nav class="flex justify-between items-center w-[86%] md:w-[90%] lg:w-[90%]
+          mx-auto container mt-2 font-normal">
+          
+          <!-- width-92 che tyaj changes karavanu raheshe atale che ne thai jase space -->
+            <div>
+                <h1 class="text-[17px] xl:text-[21px]"><b>LOGO</b></h1>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center gap-[15px] xs:bg-gray-300 xs:p-[10px] xs:rounded-[12px] xs:ml-auto md:gap-8 text-[14px] xl:text-[18px]">
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Courses_Page.html">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="About_Us_Page.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Pricing_Page.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-red-500 font-normal" href="Contact_Page.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center xs:gap-[10px] md:gap-6 ">
+                <li class="list-none hover:text-red-500 text-[14px] xl:text-[18px] font-normal"><a href="Sign_Up_Page.html">Sign Up</a></li>
+                <button class="bg-orange-500 text-white xs:px-[15px] xs:py-[8px] md:px-5 md:py-2 rounded-md hover:bg-orange-600 text-[14px] xl:text-[18px] font-normal"><a href="Login_Page.html">Sign in</a></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    
+    </nav>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[87%] mx-auto mt-[60px] md:mt-[110px] xl:mt-[160px] md:grid md:grid-cols-2 xl:gap-[80px] md:gap-[60px] gap-[16px]">
+        <h1 class="font-semibold xl:text-[48px] md:text-[38px] text-[28px] w-auto self-center">Our Pricings</h1>
+        <p class="font-normal xl:text-[18px] md:text-[16px] text-[14px] mt-[15px]">Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.</p>
+    </section>
+    <hr class="mx-[20px] mt-[30px]">
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px]">
+        <div class="border bg-white xl:w-[270px] xl:h-[79px] w-[245px] h-[73px] p-[12px] rounded-[8px] text-center mx-auto">
+            <button class="border bg-orange-500 rounded-[6px] xl:py-[14px] xl:px-[30px] py-[12px] px-[24px] text-white font-medium">Monthly</button>
+            <button class="border rounded-[6px] xl:py-[14px] xl:px-[30px] py-[12px] px-[24px] font-medium">Yearly</button>
+        </div>
+
+        <div class="border rounded-[12px] bg-white xs:p-[20px] tmd:p-[25px] lg:p-[40px] xl:p-[30px] md:grid grid-cols-2 md:gap-[20px] xl:gap-[0px] mt-[30px] md:mt-[40px] xl:mt-[60px]">
+            <div class="border border-white rounded-[12px] xl:px-[30px] xl:py-[35px] xs:mt-[15px]">
+                <div class="border xs:p-[13px] tmd:p-[15px] lg:p-[15px] xl:pt-[20px] rounded-[12px]">
+                        <p class="bg-orange-200 ml-auto mr-auto text-center lg:w-[370px] py-[8px] md:py-[10px] xl:py-[12px] rounded-[4px] xl:rounded-[6px] text-[16px] md:text-[18px] xl:text-[22px] font-medium">Free Plan</p>
+                        <h1 class="xl:text-[80px] text-center font-semibold"><b>$0</b><span class="xl:text-[20px] font-medium">/month</span></h1>
+    
+                <div>
+                        <h1 class="text-[18px] xl:text-[20px] text-center mt-[5px] font-medium">Available Features</h1>
+                    <div class=" xl:px-[50px] xl:py-[30px] xl:rounded-[8px]">
+                        <div class="border rounded-t-[8px] xs:p-[10px] tmd:p-[8px] grid gap-[10px] lg:p-[17px]">
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited access to all courses.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited course materials and resources.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Priority support from instructors.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Course completion certificates.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Ad-free experience.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-xmark border text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Access to exclusive Pro Plan community forums.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-xmark border text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Early access to new courses and updates.</p>
+                            </div>
+                            
+                        </div>
+                        <button class="border bg-orange-500 w-[100%] py-[15px] xl:py-[20px] xl:px-[24px] rounded-b-[8px] text-white text-[14px] xl:text-[18px] font-semibold">Get Started</button>
+                        
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+
+            <div class="border border-white rounded-[12px] xl:px-[30px] xl:py-[35px] xs:mt-[15px]">
+                <div class="border xs:p-[13px] tmd:p-[15px] lg:p-[15px] xl:pt-[20px] rounded-[12px]">
+                        <p class="bg-orange-200 ml-auto mr-auto text-center lg:w-[370px] py-[8px] md:py-[10px] xl:py-[12px] rounded-[4px] xl:rounded-[6px] text-[16px] md:text-[18px] xl:text-[22px] font-medium">Pro Plan</p>
+                        <h1 class="xl:text-[80px] text-center font-semibold"><b>$79</b><span class="xl:text-[20px] font-medium">/month</span></h1>
+    
+                    <div>
+                        <h1 class="text-[18px] xl:text-[20px] text-center mt-[5px] font-medium">Available Features</h1>
+                    <div class=" xl:px-[50px] xl:py-[30px] xl:rounded-[8px]">
+                        <div class="border rounded-t-[8px] xs:p-[10px] tmd:p-[8px] grid gap-[10px] lg:p-[17px]">
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited access to all courses.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Unlimited course materials and resources.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Priority support from instructors.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Course completion certificates.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Ad-free experience.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Access to exclusive Pro Plan community forums.</p>
+                            </div>
+                            <div class="flex">
+                                <i class="fa-solid fa-check border bg-orange-200 text-[13px] p-[4px] xl:p-[6px] rounded-[4px] xl:rounded-[6px] xs:h-[22.6px] tmd:h-[22.6px]" style="color: #050505;"></i>
+                                <p class="xl:p-[14px] text-[13px] md:text-[14px] xl:text-[16px] pl-[5px] font-normal"> Early access to new courses and updates.</p>
+                            </div>
+                            
+                        </div>
+                        <button class="border bg-orange-500 w-[100%] py-[15px] xl:py-[20px] xl:px-[24px] rounded-b-[8px] text-white text-[14px] xl:text-[18px] font-semibold">Get Started</button>
+                        
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] border bg-white rounded-[12px] md:grid md:grid-cols-2 xl:gap-[70px] tmd:gap-[40px] lg:gap-[80px] p-[24px] tmd:p-[40px] lg:p-[80px] xl:p-[100px]">
+        <div class="">
+            <h1 class="text-[28px] lg::text-[38px] xl:text-[48px] font-semibold"><b>Frequently Asked Questions</b></h1>
+            <p class="text-[14px] lg::text-[16px] xl:text-[18px] font-normal">Still you have any questions? Contact our Team via support@skillbridge.com</p>
+            <button class="border rounded-[6px] mt-[20px] xl:rounded-[8px] text-[14px] md:text-[16px] xl:text-[18px] xl:py-[24px] py-[14px] px-[20px] font-medium">See All FAQ’s</button>
+        </div>
+        <div class="border rounded-[12px] p-[13px] xs:mt-[30px]">
+            <span class="grid gap-[20px] md:p-[10px]">
+                <span class="flex">
+                    <h1 class="xl:text-[20px] font-medium">Can I enroll in multiple courses at once? </h1>
+                    <i class="fa-solid fa-xmark border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[22px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <p class="xl:text-[18px] font-normal">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                <span class="flex">
+                    <p class="xl:text-[18px] font-medium">Enrollment Process for Different Courses</p>
+                    <i class="fa-solid fa-arrow-right border bg-white rounded-[50%] ml-auto text-[12px] xl:text-[17px] p-[6px] xl:p-[12px] md:h-[25px] xl:h-[42px] xs:h-[25px]" style="color: #050505;"></i>
+                </span>
+                
+            </span>
+
+            <div class="mt-[20px]">
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xs:p-[10px xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">What kind of support can I expect from instructors?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are the courses self-paced or do they have specific start and end dates?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are there any prerequisites for the courses?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Can I download the course materials for offline access?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="md:flex bg-white mt-[30px] md:mt-[85px] xl:mt-[120px] xs:py-[50px] xs:px-[20px] xl:px-[100px] xl:pt-[70px] xl:pb-[50px] lg:px-[80px] lg:pt-[50px] lg:pb-[40px] tmd:px-[40px] tmd:pt-[40px] tmd:pb-[30px] justify-between">
+        <div class="grid xl:gap-[0px]">
+            <h1 class="text-[20px] md:text-[21px] xl:text-[23px] pl-[5px] font-extrabold"><b>LOGO</b></h1>
+            <span class="flex mt-[20px]">
+                <a href="mailto:hello@skillbridge.com">
+                    <i class="fa-solid fa-envelope xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #050505;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="mailto:hello@skillbridge.com">hello@skillbridge.com</a></p>
+            </span>
+            <span class="flex">
+                <a href="tel:+91 91813 22309">
+                    <i class="fa-solid fa-phone xl:p-[5px] md:p-[5px] xs:pt-[4px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #080808;"></i>
+                </a>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal"><a href="tel:+91 91813 22309">+91 91813 22309</a></p>
+            </span>
+            <span class="flex">
+                <i class="fa-solid fa-location-dot xs:pt-[4px] md:p-[5px] xl:p-[5px] xs:text-[15px] md:text-[17px] xl:text-[20px]" style="color: #0d0d0d;"></i>
+                <p class="text-[15px] md:text-[16px] xl:text-[18px] xs:pl-[4px] font-normal">Somewhere in the World</p>
+            </span>
+        </div>
+        <div class="grid xs:grid-cols-2 md:grid-cols-3 xl:gap-[40px] md:gap-[15px] xs:mt-[20px] xl:text-[18px] md:text-[16px] text-[14px]">
+            <div class="grid xl:gap-[8px]">
+                <h1 class="font-semibold"><b>Home</b></h1>
+                <h1 class="mt-[8px] font-normal">Benefits</h1>
+                <h1 class="font-normal">Our Courses</h1>
+                <h1 class="font-normal">Our Testimonials</h1>
+                <h1 class="font-normal">Our FAQ</h1>
+            </div>
+            <div class="">
+                <h1 class="font-semibold"><b>About Us</b></h1>
+                <h1 class="mt-[9px] xl:mt-[14px] font-normal">Company</h1>
+                <h1 class="xl:mt-[9px] font-normal">Achievements</h1>
+                <h1 class="xl:mt-[9px] font-normal">Our Goals</h1>
+                <h1></h1>
+            </div>
+            <div class="xs:mt-[10px]">
+                <h1 class="font-semibold"><b>Social Profiles</b></h1>
+                <span class="flex xs:gap-[20px] xl:gap-[10px] md:gap-[10px] mt-[10px]">
+                    <i class="fa-brands fa-facebook xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #080808;"></i>
+                    <i class="fa-brands fa-twitter xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #050505;"></i>
+                    <i class="fa-brands fa-linkedin xl:p-[14px] p-[8px] border bg-gray-100 xl:rounded-[8px] rounded-[6px]" style="color: #0a0a0a;"></i>
+                </span>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="bg-white text-center text-[14px] xl:text-[18px] h-[45px] font-normal">
+        <p>© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+</body>
+</html>
