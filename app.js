@@ -131,7 +131,7 @@ function handle_Explore_Course(){
 }
 
 
-// pricing button logic
+// home-page pricing button logic
 
 function handlePricing(){
   window.location.href = "Pricing_Page.html";
