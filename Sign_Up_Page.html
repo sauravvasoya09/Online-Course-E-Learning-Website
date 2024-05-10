@@ -30,13 +30,22 @@
         }
       </script>
 
-    <title>Login Page</title>
+    <title>Sign_Up_Page</title>
     <style>
         body{
             font-family: "Be Vietnam Pro", sans-serif;
             font-style: normal;
         }
     </style>
+    <style>
+        .slide {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+
 </head>
 <body class=" bg-gray-100">
     <div class="text-white mx-[20px] bg-orange-500 text-center rounded-[6px] xs:text-[12px] md:text-[13px] xl:text-[18px] xs:mt-[10px] md:mt-[15px] h-[41px] pt-[9px]">
@@ -83,20 +92,68 @@
                 <h1 class="xl:text-[38px] md:text-[30px] text-[28px] font-medium">Students Testimonials</h1>
                 <p class="xl:text-[18px] md:text-[16px] text-[14px] font-normal">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
             </span>
-            <span>
-                <div class="border bg-white p-[30px] md:p-[30px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px]">
-                    <p class="xl:text-[18px] md:text-[16px] text-[14px] tmd:h-[168px] lg:h-[120px] font-normal">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+            
+            <div class="slider">
+                
+                <!-- First slide content here -->
+                
+                <div class="slide active">
+                    <div class="border bg-white p-[30px] md:p-[30px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px]">
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] tmd:h-[168px] lg:h-[120px] font-normal">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                    </div>
+                    <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[30px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                        <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-1.png" alt="">
+                        <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[5px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Sarah L</h1>
+                        <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[8px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                    </div>
                 </div>
-                <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[30px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
-                    <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-1.png" alt="">
-                    <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[5px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Sarah L</h1>
-                    <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[8px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                
+                <!-- Second slide content here -->
+                
+                <div class="slide">
+                    <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px] xs:mt-[15px]">
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] lg:h-[120px] font-normal">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                    </div>
+                    <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                        <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-2.png" alt="">
+                        <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Jason M</h1>
+                        <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                    </div>
                 </div>
-                <div class="xs:text-center md:text-right mt-[25px]">
-                    <i class="fa-solid fa-arrow-left border bg-white xl:rounded-[8px] rounded-[6px] xl:p-[14px] p-[12px] xl:mr-[15px] mr-[10px]" style="color: #080808;"></i>
-                    <i class="fa-solid fa-arrow-right border bg-white xl:rounded-[8px] rounded-[6px] xl:p-[14px] p-[12px]" style="color: #080808;"></i>
+
+                <!-- Third slide content here -->
+
+                <div class="slide">
+                    <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px] xs:mt-[15px]">
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] tmd:h-[168px] lg:h-[120px] font-normal">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                    </div>
+                    <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                        <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-3.png" alt="">
+                        <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Emily R</h1>
+                        <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                    </div>
                 </div>
-            </span>
+
+                <!-- Fourth slide content here -->
+
+                <div class="slide">
+                    <div class="border bg-white p-[30px] md:p-[40px] xl:p-[50px] rounded-t-[10px] xl:rounded-t-[12px] xs:mt-[15px]">
+                        <p class="xl:text-[18px] md:text-[16px] text-[14px] lg:h-[120px] font-normal">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                    </div>
+                    <div class="flex py-[20px] px-[30px] md:py-[24px] md:px-[38px] xl:py-[30px] xl:px-[50px] border bg-white rounded-b-[10px] xl:rounded-b-[12px]">
+                        <img class="object-cover w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] rounded-[6px] xl:rounded-[8px]" src="img/testi-img-4.png" alt="">
+                        <h1 class="xs:text-[12px] md:text-[16px] xl:text-[18px] xs:py-[16px] xs:px-[2px] md:px-[10px] md:py-[13px] xl:px-[15px] xl:py-[17px] whitespace-nowrap font-semibold">Michal K</h1>
+                        <button class="border bg-gray-100 ml-auto xs:text-[12px] md:text-[14px] xl:text-[18px] xs:px-[5px] whitespace-nowrap md:py-[14px] md:px-[14px] xl:py-[18px] xl:px-[24px] xl:rounded-[8px] rounded-[6px] font-medium">Read Full Story</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="xs:text-center md:text-right mt-[25px]">
+                <i class="fa-solid fa-arrow-left border bg-white xl:rounded-[8px] rounded-[6px] xl:p-[14px] p-[12px] xl:mr-[15px] mr-[10px] prev-btn" style="color: #080808;"></i>
+                <i class="fa-solid fa-arrow-right border bg-white xl:rounded-[8px] rounded-[6px] xl:p-[14px] p-[12px] next-btn" style="color: #080808;"></i>
+            </div>
+        
+            
         </div>
         <div class="border bg-white xl:rounded-[12px] rounded-[10px] xl:py-[50px] lg:p-[40px] tmd:py-[25px] tmd:px-[20px] xs:p-[25px] xs:order-1">
             <div class="grid xl:gap-[40px] md:gap-[30px]">
@@ -104,27 +161,31 @@
                     <h1 class="xl:text-[48px] md:text-[38px] text-[28px] text-center font-semibold">Sign Up</h1>
                     <p class="xl:text-[18px] md:text-[16px] text-[14px] text-center font-normal">Create an account to unlock exclusive features.</p>
                 </span>
-                <span class="">
+                <form id="signup_Form" onsubmit="handleSignup(event)">
                     <div class="grid gap-[20px]">
                         <span>
                             <label for="fname" class="font-medium">Full Name</label>
                             <input type="text" id="fname" name="fname" placeholder="Enter Your Name" class="xl:p-[24px] lg:p-[20px] py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm font-normal">
+                            <p id="errorfname" class="text-red-500"></p>
                         </span>
                         <span>
-                            <label for="fname" class="font-medium">Email</label>
+                            <label for="email" class="font-medium">Email</label>
                             <input type="email" id="email" name="email" placeholder="Enter Your Email" class="xl:p-[24px] lg:p-[20px] py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm font-normal">
+                            <p id="erroremail" class="text-red-500"></p>
                         </span>
                         <span>
                             <label for="password" class="font-medium">Password</label>
                             <input type="password" id="pass" name="pass" placeholder="Enter Your Password" class="xl:p-[24px] lg:p-[20px] py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm font-normal"> 
+                            <p id="errorpass" class="text-red-500"></p>
                         </span>
                     </div>
                     <span class="flex">
-                        <input type="checkbox" id="checkbox" required class="xl:w-[16px] xl:h-[16px] w-[12px] h-[12px] mt-[30px]">
+                        <input type="checkbox" id="checkbox" class="xl:w-[16px] xl:h-[16px] w-[12px] h-[12px] mt-[30px]">
                         <p class="xl:text-[18px] md:text-[16px] text-[14px] self-center mt-[25px] px-[5px] font-normal">I agree with <span class="underline">Terms of Use</span> and <span class="underline">Privacy Policy</span> </p>
                     </span>
+                    <p id="errorcheckbox" class="text-red-500"></p>
 
-                    <button class="border bg-orange-500 font-medium text-center block xl:text-[18px] text-[14px] text-white xl:py-[18px] py-[14px] px-[20px] xl:rounded-[10px] md:rounded-[8px] rounded-[6px] mt-[20px] xl:w-[510px] lg:w-[340px] tmd:w-[255px] xs:w-[222px]" onclick="validate()">Sign Up</button>
+                    <button class="border bg-orange-500 font-medium text-center block xl:text-[18px] text-[14px] text-white xl:py-[18px] py-[14px] px-[20px] xl:rounded-[10px] md:rounded-[8px] rounded-[6px] mt-[20px] xl:w-[510px] lg:w-[340px] tmd:w-[255px] xs:w-[222px]">Sign Up</button>
                     <span class="flex mt-[20px]">
                         <hr class="xl:w-[243px] lg:w-[158px] tmd:w-[113px] xs:w-[107px] border-[1px] self-center">
                         <p class="text-gray-400 px-[2px] font-normal">OR</p>
@@ -138,7 +199,7 @@
                         <p class="xl:text-[18px] md:text-[16px] text-[14px] hover:text-blue-600 font-normal"><a href="Login_Page.html">Already have an account? Login</a></p>
                         <i class="fa-solid fa-square-arrow-up-right self-center xl:text-[20px] md:text-[16px] text-[14px] pl-[3px]" style="color: #050505;"></i>
                     </span>
-                </span>
+                </form>
             </div>
         </div>
     </section>
