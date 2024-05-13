@@ -151,6 +151,54 @@ function handlePricing(){
 
 // pricing page in yearly plan button logic
 
+let monthly = document.getElementById('monthly');
+let yearly = document.getElementById('yearly');
+let monthly_Plan = document.getElementById('monthly_Plan');
+let yearly_Plan = document.getElementById('yearly_Plan');
+document.getElementById('yearly_Plan').style.display = 'none'
+document.getElementById('monthly').style.backgroundColor = '#f97316';
+document.getElementById('monthly').style.color = 'white';
+monthly.addEventListener('click',()=>{
+  monthly_Plan.style.display = 'flex';
+  yearly_Plan.style.display = 'none';
+  monthly.style.backgroundColor = '#f97316';
+  yearly.style.backgroundColor = '';
+  monthly.style.color = 'white';
+  yearly.style.color = '';
+
+})
+
+yearly.addEventListener('click',()=>{
+  yearly_Plan.style.display = 'flex';
+  monthly_Plan.style.display = 'none';
+  yearly.style.backgroundColor = '#f97316';
+  monthly.style.backgroundColor = '';
+  yearly.style.color = 'white';
+  monthly.style.color = '';
+
+})
+
+
+// signup and sign in button functionality in navigation
+
+let sign_Up = document.getElementById('sign_Up');
+let sign_In = document.getElementById('sign_In');
+document.getElementById('sign_In').style.backgroundColor = '#f97316';
+document.getElementById('sign_In').style.color = 'white'
+
+sign_Up.addEventListener('click', () => {
+  sign_Up.style.backgroundColor = '#f97316';
+  sign_In.style.backgroundColor = '';
+  sign_Up.style.color = 'white';
+  sign_In.style.color = '';
+})
+
+sign_In.addEventListener('click', () => {
+  sign_In.style.backgroundColor = '#f97316';
+  sign_Up.style.backgroundColor = '';
+  sign_In.style.color = 'white';
+  sign_Up.style.color = '';
+})
 
 
 
