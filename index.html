@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="input.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- accordian tailwind link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- font-family -->
@@ -88,14 +93,14 @@
             <button class="bg-white rounded-md px-[13px] py-[12px] md:px-[24px] md:py-[18px] xs:text-[13px] md:text-[14px] xl:text-[18px] font-medium" onclick="handlePricing()">View Pricing</button>
         </div>
 
-        <div class="flex justify-between border bg-white rounded-[12px] h-[84px] md:h-[116px] xl:h-[154px] gap-[0px] xl:gap-[8px] p-[20px] md:p-[35px] xl:p-[30px] mt-[30px] md:mt-[85px] xl:mt-[120px]">
-            <img class="aspect-[3/2] object-contain" src="img/zapier-logo.png" alt="">
-            <img class="aspect-[3/2] object-contain" src="img/spotify-2.png" alt="">
-            <img class="aspect-[3/2] object-contain" src="img/Zoom-logo.png" alt="">
-            <img class="aspect-[3/2] object-contain xs:hidden"  src="img/amazon-logo.png" alt="">
-            <img class="aspect-[3/2] object-contain xs:hidden" src="img/adobe-2.png" alt="">
-            <img class="aspect-[3/2] object-contain xs:hidden" src="img/notion-2.png" alt="">
-            <img class="aspect-[3/2] object-contain xs:hidden" src="img/netflix-logo.png" alt="">
+        <div class="flex justify-between border bg-white rounded-[12px] h-[84px] md:h-[116px] xl:h-[154px] gap-[0px] xl:gap-[8px] p-[20px] md:p-[35px] xl:p-[30px] mt-[30px] md:mt-[85px] xl:mt-[120px] xs:overflow-x-auto xs:snap-mandatory xs:scroll-smooth xs:gap-[20px]">
+            <img class="aspect-[3/2] object-contain xs:snap-center" src="img/zapier-logo.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:snap-center" src="img/spotify-2.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:snap-center" src="img/Zoom-logo.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:snap-center "  src="img/amazon-logo.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:snap-center " src="img/adobe-2.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:snap-center " src="img/notion-2.png" alt="">
+            <img class="aspect-[3/2] object-contain xs:snap-center " src="img/netflix-logo.png" alt="">
         </div>
     </section>
 
@@ -418,19 +423,105 @@
         </div>
     </section>
 
-    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] border bg-white rounded-[12px] md:grid md:grid-cols-2 xl:gap-[70px] tmd:gap-[40px] lg:gap-[80px] p-[24px] tmd:p-[40px] lg:p-[80px] xl:p-[100px]">
+    <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] border bg-white rounded-[12px] md:grid md:grid-cols-2 xl:gap-[70px] tmd:gap-[40px] lg:gap-[80px] p-[24px] tmd:p-[40px] lg:p-[80px] xl:p-[80px]">
         <div class="">
             <h1 class="text-[28px] lg::text-[38px] xl:text-[48px] font-semibold"><b>Frequently Asked Questions</b></h1>
             <p class="text-[14px] lg::text-[16px] xl:text-[18px] font-normal">Still you have any questions? Contact our Team via support@skillbridge.com</p>
             <button class="border rounded-[6px] mt-[20px] xl:rounded-[8px] text-[14px] md:text-[16px] xl:text-[18px] xl:py-[24px] py-[14px] px-[20px] font-medium">See All FAQ’s</button>
         </div>
-        <div class="border rounded-[12px] p-[13px] xs:mt-[30px]">
+
+        
+<div id="accordion-collapse" data-accordion="collapse">
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="flex items-center justify-between w-full p-5 xl:text-[20px] font-medium border border-b-0 rounded-t-xl   gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+        <span>Can I enroll in multiple courses at once?</span>
+        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+        <p class="mb-2">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+      </div>
+    </div>
+    <h2 id="accordion-collapse-heading-2">
+        <button type="button" class="flex items-center justify-between w-full p-5 xl:text-[20px] font-medium border border-b-0 rounded-t-xl   gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="true" aria-controls="accordion-collapse-body-2">
+          <span>Enrollment Process for Different Courses</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-3">
+        <button type="button" class="flex items-center justify-between w-full p-5 text-left xl:text-[20px] font-medium border border-b-0 rounded-t-xl   gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="true" aria-controls="accordion-collapse-body-3">
+          <span>What kind of support can I expect from instructors?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-4">
+        <button type="button" class="flex items-center justify-between w-full p-5 text-left xl:text-[20px] font-medium border border-b-0 rounded-t-xl   gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="true" aria-controls="accordion-collapse-body-4">
+          <span>Are the courses self-paced or do they have specific start and end dates?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-5">
+        <button type="button" class="flex items-center justify-between w-full p-5 xl:text-[20px] font-medium border border-b-0 rounded-t-xl   gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="true" aria-controls="accordion-collapse-body-5">
+          <span>Are there any prerequisites for the courses?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-6">
+        <button type="button" class="flex items-center justify-between w-full p-5 text-left xl:text-[20px] font-medium border border-b-0 rounded-t-xl   gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="true" aria-controls="accordion-collapse-body-6">
+          <span>Can I download the course materials for offline access?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+        </div>
+      </div>
+    
+</div>
+  
+        <!-- <div class="border rounded-[12px] p-[15px] xs:mt-[30px] xl:w-[100%]" x-data="{ openIndex: null }">
             <span class="grid gap-[20px] md:p-[10px]">
-                <span class="flex">
-                    <h1 class="xl:text-[20px] font-medium">Can I enroll in multiple courses at once? </h1>
-                    <i class="fa-solid fa-xmark border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[22px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
-                </span>
-                <p class="xl:text-[18px] font-normal">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                <div class="border-b xl:text-[18px] font-medium"> <button @click="openIndex === 0 ? openIndex = null : openIndex = 0" class="w-full flex justify-between focus:outline-none focus:text-orange-500"> <span>Can I enroll in multiple courses at once? </span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="border bg-orange-200 rounded-[4px] xl:rounded-[6px] text-[12px] xl:text-[17px] p-[4px] xl:p-[8px] md:h-[22px] xl:h-[42px] xs:h-[22px] transform transition-transform" :class="{ 'rotate-55': openIndex === 0 }">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                   </svg> </button>
+                  <div x-show="openIndex === 0" class="p-4 border-t text-sm bg-gray-50 text-gray-500" style="display: none;">
+                    Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                  </div>
+                </div>
                 <span class="flex">
                     <p class="xl:text-[18px] font-medium">Enrollment Process for Different Courses</p>
                     <i class="fa-solid fa-arrow-right border bg-white rounded-[50%] ml-auto text-[12px] xl:text-[17px] p-[6px] xl:p-[12px] md:h-[25px] xl:h-[42px] xs:h-[25px]" style="color: #050505;"></i>
@@ -438,26 +529,51 @@
                 
             </span>
 
-            <div class="mt-[20px]">
-                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
-                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xs:p-[10px xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">What kind of support can I expect from instructors?</p>
-                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
-                </span>
-                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
-                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are the courses self-paced or do they have specific start and end dates?</p>
-                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
-                </span>
-                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
-                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are there any prerequisites for the courses?</p>
-                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
-                </span>
-                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+            <div class="">
+
+                <div class="border-b xl:text-[18px] font-medium"> <button @click="openIndex === 1 ? openIndex = null : openIndex = 1" class="w-full flex justify-between focus:outline-none focus:text-orange-500"> <span>What kind of support can I expect from instructors?</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="border bg-orange-200 rounded-[4px] xl:rounded-[6px] text-[12px] xl:text-[17px] p-[4px] xl:p-[8px] md:h-[22px] xl:h-[42px] xs:h-[22px] transform transition-transform" :class="{ 'rotate-55': openIndex === 1 }">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                   </svg> </button>
+                  <div x-show="openIndex === 1" class="p-4 border-t text-sm bg-gray-50 text-gray-500" style="display: none;">
+                    Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                  </div>
+                </div>
+
+                <div class="border-b xl:text-[18px] font-medium"> <button @click="openIndex === 2 ? openIndex = null : openIndex = 2" class="w-full flex justify-between focus:outline-none focus:text-orange-500 text-start"> <span>Are the courses self-paced or do they have specific start and end dates?</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="border bg-orange-200 rounded-[4px] xl:rounded-[6px] text-[12px] xl:text-[17px] p-[4px] xl:p-[8px] md:h-[22px] xl:h-[42px] xs:h-[22px] transform transition-transform" :class="{ 'rotate-55': openIndex === 2 }">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                   </svg> </button>
+                  <div x-show="openIndex === 2" class="p-4 border-t text-sm bg-gray-50 text-gray-500" style="display: none;">
+                    Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                  </div>
+                </div>
+
+                <div class="border-b xl:text-[18px] font-medium"> <button @click="openIndex === 3 ? openIndex = null : openIndex = 3" class="w-full flex justify-between focus:outline-none focus:text-orange-500"> <span>Are there any prerequisites for the courses?</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="border bg-orange-200 rounded-[4px] xl:rounded-[6px] text-[12px] xl:text-[17px] p-[4px] xl:p-[8px] md:h-[22px] xl:h-[42px] xs:h-[22px] transform transition-transform" :class="{ 'rotate-55': openIndex === 3 }">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                   </svg> </button>
+                  <div x-show="openIndex === 3" class="p-4 border-t text-sm bg-gray-50 text-gray-500" style="display: none;">
+                    Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                  </div>
+                </div>
+
+                <div class="border-b xl:text-[18px] font-medium"> <button @click="openIndex === 4 ? openIndex = null : openIndex = 4" class="w-full flex justify-between focus:outline-none focus:text-orange-500"> <span>Can I download the course materials for offline access?</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="border bg-orange-200 rounded-[4px] xl:rounded-[6px] text-[12px] xl:text-[17px] p-[4px] xl:p-[8px] md:h-[22px] xl:h-[42px] xs:h-[22px] transform transition-transform" :class="{ 'rotate-55': openIndex === 4 }">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                   </svg> </button>
+                  <div x-show="openIndex === 4" class="p-4 border-t text-sm bg-gray-50 text-gray-500" style="display: none;">
+                    Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                  </div>
+                </div>
+
+
+                
+                
+                 <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
                     <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Can I download the course materials for offline access?</p>
                     <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
-                </span>
+                </span> -->
             </div>
         </div>
     </section>
+    
 
     <footer class="md:flex bg-white mt-[30px] md:mt-[85px] xl:mt-[120px] xs:py-[50px] xs:px-[20px] xl:px-[100px] xl:pt-[70px] xl:pb-[50px] lg:px-[80px] lg:pt-[50px] lg:pb-[40px] tmd:px-[40px] tmd:pt-[40px] tmd:pb-[30px] justify-between">
         <div class="grid xl:gap-[0px]">
@@ -518,18 +634,45 @@
 </body>
 </html>
 
-<!-- 
-    w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
-w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[98px] xl:h-[34px] 
-w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
-w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
-w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
-w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
-w-[48px] h-[24px] md:w-[56px] md:h-[28px] xl:w-[68px] xl:h-[34px] 
-    px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
-px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
-px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
-px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
-px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
-px-[30px] py-[20px] xl:px-[40px] xl:py-[30px]
-px-[30px] py-[20px] xl:px-[40px] xl:py-[30px] -->
+<!-- pricing ni niche change karel part  -->
+
+<!-- <section class="w-[86%] md:w-[90%] lg:w-[90%] mx-auto mt-[30px] md:mt-[85px] xl:mt-[120px] border bg-white rounded-[12px] md:grid md:grid-cols-2 xl:gap-[70px] tmd:gap-[40px] lg:gap-[80px] p-[24px] tmd:p-[40px] lg:p-[80px] xl:p-[100px]">
+        <div class="">
+            <h1 class="text-[28px] lg::text-[38px] xl:text-[48px] font-semibold"><b>Frequently Asked Questions</b></h1>
+            <p class="text-[14px] lg::text-[16px] xl:text-[18px] font-normal">Still you have any questions? Contact our Team via support@skillbridge.com</p>
+            <button class="border rounded-[6px] mt-[20px] xl:rounded-[8px] text-[14px] md:text-[16px] xl:text-[18px] xl:py-[24px] py-[14px] px-[20px] font-medium">See All FAQ’s</button>
+        </div>
+        <div class="border rounded-[12px] p-[13px] xs:mt-[30px]">
+            <span class="grid gap-[20px] md:p-[10px]">
+                <span class="flex" id="according">
+                    <h1 class="xl:text-[20px] font-medium">Can I enroll in multiple courses at once? </h1>
+                    <i class="fa-solid fa-xmark border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[22px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <p class="xl:text-[18px] font-normal">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                <span class="flex">
+                    <p class="xl:text-[18px] font-medium">Enrollment Process for Different Courses</p>
+                    <i class="fa-solid fa-arrow-right border bg-white rounded-[50%] ml-auto text-[12px] xl:text-[17px] p-[6px] xl:p-[12px] md:h-[25px] xl:h-[42px] xs:h-[25px]" style="color: #050505;"></i>
+                </span>
+                
+            </span>
+
+            <div class="mt-[20px]">
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xs:p-[10px xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">What kind of support can I expect from instructors?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are the courses self-paced or do they have specific start and end dates?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Are there any prerequisites for the courses?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+                <span class="flex border rounded-[12px] xs:p-[10px] md:p-[10px] xl:p-[10px] mt-[8px]">
+                    <p class="text-[16px] xs:text-[14px] lg:text-[18px] xl:text-[20px] tmd:w-[200px] lg:w-[250px] xl:w-[350px] font-medium">Can I download the course materials for offline access?</p>
+                    <i class="fa-solid fa-plus border bg-orange-200 ml-auto text-[12px] xl:text-[17px] p-[4px] xl:p-[12px] rounded-[4px] xl:rounded-[6px] md:h-[23px] xl:h-[42px] xs:h-[22px]" style="color: #050505;"></i>
+                </span>
+            </div>
+        </div>
+    </section> -->
