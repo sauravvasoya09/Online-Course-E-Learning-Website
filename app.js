@@ -155,7 +155,7 @@ let monthly = document.getElementById('monthly');
 let yearly = document.getElementById('yearly');
 let monthly_Plan = document.getElementById('monthly_Plan');
 let yearly_Plan = document.getElementById('yearly_Plan');
-document.getElementById('yearly_Plan').style.display = 'none'
+document.getElementById('yearly_Plan').style.display = 'none';
 document.getElementById('monthly').style.backgroundColor = '#f97316';
 document.getElementById('monthly').style.color = 'white';
 monthly.addEventListener('click',()=>{
@@ -201,35 +201,3 @@ sign_In.addEventListener('click', () => {
 })
 
 
-
-// signup & login page slider
-
-const slides = document.querySelectorAll('.slide');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        let currentIndex = 0;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                if (i === index) {
-                    slide.classList.add('active');
-                } else {
-                    slide.classList.remove('active');
-                }
-            });
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        prevBtn.addEventListener('click', prevSlide);
-        nextBtn.addEventListener('click', nextSlide);
-
-        showSlide(currentIndex);
